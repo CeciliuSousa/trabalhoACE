@@ -1,19 +1,24 @@
-$primary-normal: #06121e;
-$primary-dark: #040f1a;
-$primary-light: #0c2135;
+// Define a paleta de cores primárias com variações normal, dark e light
+$primary-normal: #06121e;    // Azul escuro usado como cor principal
+$primary-dark: #040f1a;      // Versão mais escura da cor primária
+$primary-light: #0c2135;     // Versão mais clara da cor primária
 
-$secondary-normal: #090d11;
-$secondary-dark: #06090c;
-$secondary-light: #1a1f25;
+// Define a paleta de cores secundárias
+$secondary-normal: #090d11;  // Cinza escuro usado como cor secundária
+$secondary-dark: #06090c;    // Versão mais escura da cor secundária
+$secondary-light: #1a1f25;   // Versão mais clara da cor secundária
 
-$black-normal: #232224;
-$black-dark: #161617;
-$black-light: #353436;
+// Define variações de preto
+$black-normal: #232224;      // Preto padrão
+$black-dark: #161617;        // Preto mais intenso
+$black-light: #353436;       // Preto mais suave
 
-$white-normal: #fff;
-$white-dark: #edeaef;
-$white-light: #fefbff;
+// Define variações de branco
+$white-normal: #fff;         // Branco puro
+$white-dark: #edeaef;        // Branco acinzentado
+$white-light: #fefbff;       // Branco brilhante
 
-$red-normal: #d94146;
-$red-dark: #b42b2b;
-$red-light: #d34040;
+// Define variações de vermelho
+$red-normal: #d94146;        // Vermelho padrão para destaques
+$red-dark: #b42b2b;          // Vermelho mais escuro
+$red-light: #d34040;         // Vermelho mais claro para hover

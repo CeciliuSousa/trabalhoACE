@@ -1,24 +1,26 @@
+// Largura máxima do conteúdo
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 1440px;    // Largura máxima do conteúdo
+    margin: 0 auto;    // Centraliza horizontalmente
 }
 
+// Posicionamento relativo para o background
 .bg-home {
-    position: relative;
+    position: relative;    // Posicionamento relativo para o background
 }
 
 .bg-home::before {
-    content: '';
+    content: '';    // Elemento pseudo necessário para o ::before
     display: block;
-    position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(../assets/bg.svg);
+    position: absolute;    // Posicionamento absoluto em relação ao .bg-home
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(../assets/bg.svg);    // Gradiente sobre a imagem de fundo
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
-    background-size: cover;
+    z-index: -1;    // Coloca o background atrás do conteúdo
+    background-size: cover;    // Ajusta a imagem para cobrir todo o espaço
     background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 0.9;
+    background-position: 50% 0;    // Centraliza horizontalmente
+    opacity: 0.9;    // Leve transparência
 }

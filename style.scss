@@ -1,37 +1,37 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0;
+    margin: 0;    // Remove margens padrão
+    padding: 0;    // Remove preenchimentos padrão
+    box-sizing: border-box;    // Inclui bordas e padding no cálculo de largura/altura
+    outline: 0;    // Remove contornos
 }
 
-@import "partials/colors";
-@import "partials/header";
-@import "partials/layout";
+@import "partials/colors";    // Importa as variáveis de cores
+@import "partials/header";    // Importa os estilos do cabeçalho
+@import "partials/layout";    // Importa os estilos de layout
 
 body {
-    font-family: 'Sora', sans-serif;
-    width: 100%;
-    height: 100vh;
-    position: relative;
+    font-family: 'Sora', sans-serif;    // Define a fonte principal
+    width: 100%;    // Ocupa toda a largura disponível
+    height: 100vh;    // Ocupa toda a altura da viewport
+    position: relative;    // Posicionamento relativo
 
-    background-color: $primary-normal;
+    background-color: $primary-normal;    // Cor de fundo azul escuro
 }
 
 button {
-    font-family: 'Sora', sans-serif;
-    cursor: pointer;
+    font-family: 'Sora', sans-serif;    // Mantém a mesma fonte nos botões
+    cursor: pointer;    // Muda o cursor para mão ao passar sobre botões
 }
 
 svg {
-    width: 100%;
+    width: 100%;    // SVGs ocupam toda a largura do contêiner
 }
 
 img {
-    width: 100%;
+    width: 100%;    // Imagens ocupam toda a largura do contêiner
 }
 
 a {
-    cursor: pointer;
-    text-decoration: none;
+    cursor: pointer;    // Muda o cursor para mão ao passar sobre links
+    text-decoration: none;    // Remove sublinhado dos links
 }

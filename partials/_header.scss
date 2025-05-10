@@ -1,78 +1,78 @@
 header {
-    width: 100%;
+    width: 100%;    // Cabeçalho ocupa toda a largura da tela
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 20px;
+    display: flex;    // Usa flexbox para organizar os elementos
+    align-items: center;    // Centraliza verticalmente os itens
+    justify-content: space-between;    // Distribui espaço entre os elementos
+    padding: 20px 20px;    // Espaçamento interno
 }
 
 i {
-    color: $white-normal;
+    color: $white-normal;    // Define a cor dos ícones como branco
 }
 
 .header-icons {
-    display: flex;
-    gap: 14px;
+    display: flex;    // Organiza os ícones em linha
+    gap: 14px;    // Espaçamento entre os ícones
 }
 
 .header-icons a:hover {
     i {
-        animation: translateY 0.8s infinite alternate;
-        color: $red-light;
+        animation: translateY 0.8s infinite alternate;    // Animação ao passar o mouse
+        color: $red-light;    // Muda a cor para vermelho claro
     }
 }
 
 @keyframes translateY {
     from {
-        transform: translateY(0) scale(1);
+        transform: translateY(0) scale(1);    // Posição e tamanho inicial
     } to {
-        transform: translateY(-8px) scale(1.1);
+        transform: translateY(-8px) scale(1.1);    // Move para cima e aumenta levemente
     }
 }
 
 .header-button {
-    border: 1px solid $white-normal;
-    padding: 8px 24px;
-    border-radius: 4px;
-    color: $white-normal;
-    background: transparent;
-    transition: background-color 0.8s;
+    border: 1px solid $white-normal;    // Borda branca
+    padding: 8px 24px;    // Espaçamento interno
+    border-radius: 4px;    // Bordas arredondadas
+    color: $white-normal;    // Texto branco
+    background: transparent;    // Fundo transparente
+    transition: background-color 0.8s;    // Transição suave para mudança de cor
 }
 
 .header-button:hover {
-    border: 1px solid $red-light;
-    background-color: $red-light;
+    border: 1px solid $red-light;    // Muda a borda para vermelho ao passar o mouse
+    background-color: $red-light;    // Muda o fundo para vermelho
 }
 
 .header-logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8px;
+    display: flex;    // Usa flexbox
+    align-items: center;    // Centraliza verticalmente
+    justify-content: center;    // Centraliza horizontalmente
+    margin-top: 8px;    // Espaçamento superior
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {    // Regras para telas menores que 768px
     .header-content {
         width: 100%;
-        flex-direction: column;
+        flex-direction: column;    // Muda para layout vertical
         align-items: center;
         justify-content: center;
 
         i {
-            margin-top: 16px;
-            font-size: 34px;
+            margin-top: 16px;    // Adiciona espaço acima dos ícones
+            font-size: 34px;    // Aumenta o tamanho dos ícones
         }
     }
 
     .header-logo img {
-        width: 160px;
-        margin-top: 46px;
+        width: 160px;    // Reduz o tamanho do logo
+        margin-top: 46px;    // Adiciona espaço acima do logo
     }
 
     .header-button {
-        display: none;
+        display: none;    // Esconde o botão em telas pequenas
     }
 }
